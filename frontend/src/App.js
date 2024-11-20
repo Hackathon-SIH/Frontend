@@ -1,40 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs';
+import Footer from './components/footer/footer';
+import HowItWorks from './components/HowItWorks/HowItWorks';
+import Navbar from './components/Navbar/Navbar';
+import PopularCategory from './components/PopularCategory/PopularCategory';
+import TopCompanies from './components/TopCompanies/TopCompanies';
+import LandingPage from './pages/LandingPage/LandingPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <LandingPage />
+      <FeaturedJobs />
+      <HowItWorks />
+      <PopularCategory />
+      <TopCompanies />
+      <Footer />
     </div>
   );
 }
 
 export default App;
 
-
-
-// LOGIN PAGE
-
-
-// import React from "react";
-// import LoginPage from "./pages/loginPage/loginPage";
-// function App() {
-//   return (
-//     <div><LoginPage /></div>
-//   );
-// }
-
-// export default App;

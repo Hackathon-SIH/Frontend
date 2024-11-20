@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+  
+  .logo img {
+    font-weight: bold;
+    width: 20%;
+  }
+  
+  .nav-links a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .sign-up {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  
