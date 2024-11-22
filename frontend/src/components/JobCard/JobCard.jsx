@@ -3,9 +3,9 @@ import { FaBookmark } from 'react-icons/fa';       // Bookmark icon
 import { FaMapMarkerAlt } from 'react-icons/fa';   // Location icon
 import { FaClock } from 'react-icons/fa';          // Clock icon
 import './JobCard.css';
-import companyLogo from '../../images/company_logo.png';
+import companyLogo from '../../images/Google.png';
 
-function JobCard({ title, company, location, salary, tags, type, posted, companyLogo, colorClass }) {
+function JobCard({ title, company, location, salary, tags, type, posted, colorClass }) {
     return (
         <div className='job-card'>
             <div className={`upper-cnt ${colorClass}`}>
@@ -19,7 +19,7 @@ function JobCard({ title, company, location, salary, tags, type, posted, company
 
                 <div className="company-info">
                     <img src={companyLogo} alt={`${company} logo`} className="company-logo" />
-                    <div>
+                    <div className='company-data'>
                         <h4>{company}</h4>
                         <p className="location">
                             <FaMapMarkerAlt /> {location}
