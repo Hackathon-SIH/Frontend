@@ -7,7 +7,7 @@
     background-color: #f0f0f0;
 }
 
-.navbar {
+/* .navbar {
     width: 100%;
     background-color: #fff;
     padding: 10px;
@@ -15,11 +15,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
-.navbar .logo img {
+/* .navbar .logo img {
     width: 150px;
-}
+} */
 
 .navbar .nav-links {
     list-style: none;

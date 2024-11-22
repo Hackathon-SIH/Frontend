@@ -7,7 +7,7 @@ const SignUpForm = ({ isVisible, onClose }) => {
     // State to track the current page or step
     const [step, setStep] = useState(1);
     const [termsAccepted, setTermsAccepted] = useState(false);
-    const [isFormComplete, setIsFormComplete] = useState(false);
+    // const [isFormComplete, setIsFormComplete] = useState(false);
 
     // Function to move to the next page
     const goToNextStep = () => {
@@ -22,10 +22,10 @@ const SignUpForm = ({ isVisible, onClose }) => {
         setTermsAccepted(e.target.checked);
     };
 
-    const handleFormSubmit = () => {
-        // Handle form submission logic here
-        setIsFormComplete(true);
-    };
+    // const handleFormSubmit = () => {
+    //     // Handle form submission logic here
+    //     setIsFormComplete(true);
+    // };
 
     return (
         <div className={`signup-container ${isVisible ? 'visible' : ''}`}>
@@ -96,10 +96,10 @@ const SignUpForm = ({ isVisible, onClose }) => {
                     <input type="text" placeholder="Preferred Job Type"/>
                     <input type="text" placeholder="Work mode"/>
                     <input type="text" placeholder="Experience"/>
-                    <button type="button" className="create-account-btn" onClick={handleFormSubmit}>
+                    <button type="button" className="create-account-btn" >
                         Confirm <span>&rarr;</span>
                     </button>
-                    {isFormComplete && <SignUpSuccess />}
+                    {/* {isFormComplete && <SignUpSuccess />} */}
                 </form>
             )}
         </div>
