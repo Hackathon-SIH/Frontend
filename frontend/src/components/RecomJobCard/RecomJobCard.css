@@ -80,6 +80,10 @@
   border-radius: 50%;
 }
 
+.companyLogo:hover {
+  cursor: pointer;
+}
+
 .companyData {
   display: flex;
   flex-direction: column;

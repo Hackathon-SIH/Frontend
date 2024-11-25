@@ -24,7 +24,7 @@ const PopularCategory = () => {
         {categories.map((category, index) => (
           <div key={index} className="category-card">
             <div className="icon">{category.icon}</div>
-            <div className='content'>
+            <div className='popular-content'>
               <h3>{category.title}</h3>
               <p>{category.positions} Open positions</p>
             </div>

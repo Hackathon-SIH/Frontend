@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/LandingPage';
 import IntershipLPage from './pages/IntershipLPage/InternshipLPage';
 import JobDetailsPage from './pages/JobDetailsPage/JobDetailsPage';
+import CompanyProfilePage from './pages/CompanyProfilePage/CompanyProfilePage';
 
 function App() {
   const [isSignUpVisible, setSignUpVisible] = useState(false);
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path='/internship' element={<IntershipLPage />} />
           <Route path='/jobdetails' element={<JobDetailsPage />} />
+          <Route path='/companyProfile' element={<CompanyProfilePage />} />
         </Routes>
     </Router>
   );

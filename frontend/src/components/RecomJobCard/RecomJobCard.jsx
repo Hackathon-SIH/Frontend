@@ -12,6 +12,11 @@ function RecomJobCard({ title, company, location, salary, tags, type, posted, co
     const handleViewDetails = () => {
         navigate('/jobdetails');
     }
+
+    const handleCompanyProfile = () => {
+        navigate('/companyProfile')
+    }
+    
     return (
         <div className='RecomCard'>
             <div className={`upperContainer ${colorClass}`}>
@@ -27,7 +32,7 @@ function RecomJobCard({ title, company, location, salary, tags, type, posted, co
                 <div className='centerContainer'>
                     <div className='middleConatiner'>
                         <div className="companyInfo">
-                            <img src={companyLogo} alt={`${company} logo`} className="companyLogo" />
+                            <img src={companyLogo} alt={`${company} logo`} onClick={handleCompanyProfile} className="companyLogo" />
                             <div className='companyData'>
                                 {/* <h4>{company}</h4> */}
                                 <div className='data'>
