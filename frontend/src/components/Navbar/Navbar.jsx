@@ -10,7 +10,7 @@ function Navbar({ onSignUpClick }) {
                 <img src={Logo} alt='logo'></img>
             </div>
             <div className="nav-links">
-            <button className="search-icon">
+                <button className="search-icon">
                     <FaSearch />
                 </button>
                 <a href="#">Internship</a>

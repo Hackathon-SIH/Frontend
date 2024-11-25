@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBookmark } from 'react-icons/fa';       // Bookmark icon
+import { CiBookmark } from 'react-icons/ci';       // Bookmark icon
 import { FaMapMarkerAlt } from 'react-icons/fa';   // Location icon
 import { FaClock } from 'react-icons/fa';          // Clock icon
 import './JobCard.css';
@@ -11,7 +11,7 @@ function JobCard({ title, company, location, salary, tags, type, posted, colorCl
             <div className={`upper-cnt ${colorClass}`}>
                 <div className="job-card-header">
                     <h3>{title}</h3>
-                    <button className="bookmark-button"><FaBookmark /></button>
+                    <button className="bookmark-button"><CiBookmark /></button>
                 </div>
                 <div className='job-type'>
                     <p>{type}</p>

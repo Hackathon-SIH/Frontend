@@ -1,37 +1,29 @@
 import './App.css';
 import React, { useState } from 'react';
-import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs';
-import Footer from './components/footer/footer';
-import HowItWorks from './components/HowItWorks/HowItWorks';
-import Navbar from './components/Navbar/Navbar';
-import PopularCategory from './components/PopularCategory/PopularCategory';
-import SignUpForm from './components/SignUpForm/SignUpForm';
-import TopCompanies from './components/TopCompanies/TopCompanies';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/LandingPage';
+import IntershipLPage from './pages/IntershipLPage/InternshipLPage';
+import JobDetailsPage from './pages/JobDetailsPage/JobDetailsPage';
 
 function App() {
   const [isSignUpVisible, setSignUpVisible] = useState(false);
 
-    const handleSignUpClick = () => {
-        setSignUpVisible(true);
-    };
+  const handleSignUpClick = () => {
+    setSignUpVisible(true);
+  };
 
-    const handleCloseSignUp = () => {
-        setSignUpVisible(false);
-    };
-
+  const handleCloseSignUp = () => {
+    setSignUpVisible(false);
+  };
 
   return (
-    <div className="App">
-      <Navbar onSignUpClick={handleSignUpClick} />
-      <LandingPage />
-      <FeaturedJobs />
-      <HowItWorks />
-      <PopularCategory />
-      <TopCompanies />
-      <Footer />
-      <SignUpForm isVisible={isSignUpVisible} onClose={handleCloseSignUp} />
-    </div>
+    <Router>    
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path='/internship' element={<IntershipLPage />} />
+          <Route path='/jobdetails' element={<JobDetailsPage />} />
+        </Routes>
+    </Router>
   );
 }
 
