@@ -17,7 +17,7 @@ function JobCard({ title, company, location, salary, tags, type, posted, colorCl
                     <p>{type}</p>
                 </div>
 
-                <div className="company-info">
+                <div className="company-content">
                     <img src={companyLogo} alt={`${company} logo`} className="company-logo" />
                     <div className='company-data'>
                         <h4>{company}</h4>

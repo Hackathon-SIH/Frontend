@@ -8,7 +8,7 @@ const JobSearchBar = () => {
       <hr />
       <input type="text" className='input-one' placeholder="Enter location" />
       <hr />
-      <input type="text" placeholder="Years of experience" />
+      <input type="text" className='input-one' placeholder="Years of experience" />
       <button>Search</button>
     </div>
   );

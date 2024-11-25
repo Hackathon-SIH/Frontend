@@ -57,10 +57,10 @@ const SignUpForm = ({ isVisible, onClose }) => {
                         <input type="text" placeholder="Full Name" />
                         <input type="text" placeholder="Username" />
                     </div>
-                    <input type="text" placeholder="Phone no." />
-                    <input type="email" placeholder="Email address" />
-                    <input type="password" placeholder="Password"/>
-                    <input type="password" placeholder="Confirm Password" />
+                    <input id='innput' type="text" placeholder="Phone no." />
+                    <input id='innput'  type="email" placeholder="Email address" />
+                    <input id='innput'  type="password" placeholder="Password"/>
+                    <input id='innput' type="password" placeholder="Confirm Password" />
                     <button type="submit" className="create-account-btn">
                         Create Account <span>&rarr;</span>
                     </button>
