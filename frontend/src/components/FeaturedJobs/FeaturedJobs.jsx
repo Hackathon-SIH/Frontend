@@ -12,7 +12,7 @@ function FeaturedJobs() {
       tags: ["Part-time", "Senior level", "Distant"],
       type: "Internship",
       posted: "2 days ago",
-      companyLogo: "/home/rudraksh/Documents/Hackathon(SIH)/Frontend/frontend/src/images/Google.png",
+      companyLogo: "/path/to/company-logo2.jpg",
     },
     {
       title: "Technical Support Specialist",

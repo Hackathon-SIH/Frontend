@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './SignUpForm.css';
-import SignUpSuccess from '../../pages/SignUpSuccess/SignUpSuccess';
+import { useNavigate } from 'react-router-dom';
 
 
 const SignUpForm = ({ isVisible, onClose }) => {
     // State to track the current page or step
     const [step, setStep] = useState(1);
     const [termsAccepted, setTermsAccepted] = useState(false);
+    const navigate = useNavigate();
     // const [isFormComplete, setIsFormComplete] = useState(false);
 
     // Function to move to the next page
@@ -21,6 +22,10 @@ const SignUpForm = ({ isVisible, onClose }) => {
     const handleCheckboxChange = (e) => {
         setTermsAccepted(e.target.checked);
     };
+
+    const handleConfirmClick = () => {
+        navigate('/internship')
+    }
 
     // const handleFormSubmit = () => {
     //     // Handle form submission logic here
@@ -96,7 +101,7 @@ const SignUpForm = ({ isVisible, onClose }) => {
                     <input type="text" placeholder="Preferred Job Type"/>
                     <input type="text" placeholder="Work mode"/>
                     <input type="text" placeholder="Experience"/>
-                    <button type="button" className="create-account-btn" >
+                    <button type="button" className="create-account-btn" onClick={handleConfirmClick}>
                         Confirm <span>&rarr;</span>
                     </button>
                     {/* {isFormComplete && <SignUpSuccess />} */}
